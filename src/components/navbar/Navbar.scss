@@ -1,0 +1,121 @@
+.main-header {
+  width: 100%;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 64px 19px;
+  white-space: pre;
+
+  &__hamburger-menu {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 26px;
+    left: 204px;
+    color: #fff;
+    display: none;
+    @media only screen and (max-width: 920px) {
+      display: block;
+    }
+
+    &,
+    svg {
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    height: 35px;
+  }
+
+  &__basket {
+    position: relative;
+    margin-left: 5.278vw;
+    margin-right: 1.667vw;
+  }
+
+  &__basket-btn {
+    background: none;
+    border: none;
+  }
+
+  &__quantity {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fcb500;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.75em;
+    margin: auto;
+    color: black;
+  }
+}
+
+.menu {
+  font-size: 1.25vw;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-left: 2.778vw;
+  }
+
+  &__item-link {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: yellow;
+      text-decoration: revert;
+    }
+  }
+
+  @media only screen and (min-width: 920px) {
+    display: flex !important;
+  }
+
+  @media only screen and (max-width: 560px) {
+    left: 10% !important;
+  }
+
+  @media only screen and (max-width: 920px) {
+    display: none;
+    position: absolute;
+    top: 77px;
+    left: 180px;
+    width: 250px;
+    min-height: 250px;
+    padding-bottom: 30px;
+    background-color: #000;
+    font-size: 17px;
+    z-index: 10;
+    &__item {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 30px;
+      &-link {
+        &:hover {
+          color: #f2c600;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 480px) {
+}
